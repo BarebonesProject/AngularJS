@@ -1,0 +1,31 @@
+{
+  "name": "barebones-angular-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BarebonesProject/AngularJS.git"
+  },
+  "scripts": {
+    "run": "npm run build && npm run start",
+    "build": "tsc && browserify frontend/app/main.js -o frontend/app/bootstrap.js",
+    "start": "node backend/server.js"
+  },
+  "author": "Adrien Castex <adrien.castex@protonmail.com>",
+  "license": "Unlicense",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.6.32",
+    "@types/angular-route": "^1.3.4",
+    "@types/jquery": "~2",
+    "through2": "^2.0.3"
+  },
+  "browserify": {
+    "transform": [
+      "./tools/transform.js"
+    ]
+  }
+}
