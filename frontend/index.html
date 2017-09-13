@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <base href="/">
+        <title>Barebones Project - Angular JS</title>
+        
+        <!-- Bootstrap -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        
+        <!-- Global styles -->
+        <link href="styles/styles.css" rel="stylesheet" />
+
+        <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+        <!-- AngularCSS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
+
+        <!-- App -->
+        <script src="/app/bootstrap.js"></script>
+    </head>
+    <body>
+        <div>
+            <a href="/">Home</a>
+            <a href="/feature">Feature</a>
+        </div>
+        <div>
+            <h1>Hello!</h1>
+            <div ng-view>Loading...</div>
+        </div>
+    </body>
+</html>
