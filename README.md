@@ -1,4 +1,4 @@
-# Angular 4 - Barebones
+# Angular JS - Barebones
 
 ## Install
 
